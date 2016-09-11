@@ -1,0 +1,84 @@
+% -*- program : xelatex -*-
+\documentclass[varwidth,preview,border=1pt]{standalone}
+\usepackage{fontspec}
+\usepackage{libertine}
+\usepackage[table, usenames, dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs,multirow}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+    linkbordercolor=white
+}
+
+\begin{document}
+\begin{tabular}{rcl}
+\toprule
+\rowcolor{gray!50}
+\textbf{Category} & \textbf{Attribute} & \textbf{Description} \\ \midrule\\[-1em]
+\multirow{2}{*}{General Preferences}
+    &\LKeyCtrlAltX{U} & User Preferences \\
+    &\LKeyCtrl +\LKeyEnter & Show/Hide Properties Panel \\
+    &\LKeyShift +\LKeySpace & Toggle Maximise Area \\
+[1em]
+\multirow{2}{*}{Viewport Navigation}
+    &\LKey{1}, \LKey{2} & Front/Back View \\
+    &\LKey{3}, \LKey{4} & Left/Right View \\
+    &\LKey{5}, \LKey{6} & Top/Bottom View \\
+    &\LKey{7} & Ortho/Persp Toggle \\
+    &\LKeyPad{0} & Enter/Exit Camera View \\
+    &\LKeyCtrl +\LKeyPad{0} & Set Active Object as Camera \\
+    &\LKeyCtrl +\LKeyAlt +\LKeyPad{0} & Align Camera to View \\
+    &\LKey{S} +\LMouseL & Strafe Camera \\
+    &\LKey{S} +\LMouseM & Dolly Camera \\
+    &\LKey{S} +\LMouseR & Roll Camera \\
+    &\LKey{F} & Frame Selected \\
+    &\LKeyPad{10} & Isolate Selection \\
+    &\LKey{Z} & Shaded/Wireframe Toggle \\
+    &\LKeyAltX{Z} & Shaded/Material Toggle (Cycles)\\
+    &\LKey{G} & Show/Hide Grid \\
+    &\LKeyCtrl +\LKeySpace & Show/Hide 3D Gizmo \\
+[1em]
+\multirow{2}{*}{Editing (Object)}
+    &\LKey{V} & Move Selected \\
+    &\LKey{S} & Scale Selected \\
+    &\LKey{R} & Rotate Selected \\
+    &\LKeyShiftX{S} & Snapping Options \\
+    &\LKeyCtrl +\LKeyShift +\LMouseR & Place 3D Cursor \\
+    &\LKeyAltX{D} & Clone \\
+    &\LKeyShiftX{D} & Duplicate \\
+    &\LKeyShiftX{R} & Repeat Last Command \\
+    &\LKeyShiftX{X} & Delete \\
+[1em]
+\multirow{2}{*}{Editing (Mesh)}
+    &\LKey{T} & Select Vertices \\
+    &\LKey{E} & Select Edges \\
+    &\LKey{U} & Select Polygons \\
+    &\LKeyShiftX{K} & Knife Tool \\
+    &\LKey{S} +\LKeySpace & Search Menu \\
+    &\LKeyCtrlX{R} & \href{https://www.blender.org/manual/modeling/meshes/editing/subdividing/loop_subdivide.html}{Loop Subdivide} \\
+    &\LKey{I} & Inset Polygons \\
+    &\LKeyCtrlX{D} & Extrude Polygons \\
+    &\LKeyCtrlX{B} & Bevel (Scroll to subdivide) \\
+    &\LKey{M} & Slide Vertex/Edge/Polygon \\
+    &\LKey{N} & Connect/Fill \\
+    &\LKeyShiftX{V} & Rip \\
+    &\LKeyAltX{V} & Rip Fill \\
+    &\LKey{P} & Detach polygons as new mesh \\
+    &\LKey{K} & Add Edge Tool (Knife) \\
+    &\LKey{O} & Proportional Editing \\
+[1em]
+\multirow{2}{*}{Selection (Mesh)}
+    &\LKeyShift +\LKeyAlt +\LMouseL & Select Shortest Path \\
+    &\LKeyShift +\LKeyAlt +\LMouseM & Select Edge Loop \\
+    &\LKeyCtrl +\LKeyAlt +\LMouseL & Select Edge Ring \\
+    &\LKeyCtrl +\LMouseR & Lasso Select \\
+    &\LKeyCtrl +\LKeyShift +\LMouseR & Lasso Deselect \\
+    &\LKey{B} & Brush Select (Circle Select)\\
+    &&  (\LMouseR to drop tool) (\LKeyShift to deselect)\\
+    &\LKeyCtrlX{L} & Select Polygon Island \\
+    &\LKeyCtrl +\LKeyPad{11} & Grow Selection \\
+    &\LKeyCtrl +\LKeyPad{12} & Shrink Selection \\
+\bottomrule
+\end{tabular}
+\end{document}
