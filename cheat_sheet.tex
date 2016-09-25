@@ -15,7 +15,7 @@
 \begin{tabular}{rcl}
 \toprule
 \rowcolor{gray!50}
-\textbf{Category} & \textbf{Attribute} & \textbf{Description} \\ \midrule\\[-1em]
+\textbf{Category} & \textbf{Key Combination} & \textbf{Description} \\ \midrule\\[-1em]
 \multirow{2}{*}{General Preferences}
     &\LKeyCtrlAltX{U} & User Preferences \\
     &\LKeyCtrl +\LKeyEnter & Show/Hide Properties Panel \\
@@ -36,6 +36,7 @@
     &\LKeyPad{10} & Isolate Selection \\
     &\LKey{Z} & Shaded/Wireframe Toggle \\
     &\LKeyAltX{Z} & Shaded/Material Toggle (Cycles)\\
+    &\LKey{Q} & Show/Hide Render View \\
     &\LKey{G} & Show/Hide Grid \\
     &\LKeyCtrl +\LKeySpace & Show/Hide 3D Gizmo \\
 [1em]
@@ -49,6 +50,9 @@
     &\LKeyShiftX{D} & Duplicate \\
     &\LKeyShiftX{R} & Repeat Last Command \\
     &\LKeyShiftX{X} & Delete \\
+    &\LKeyCtrl +\LKey{0} .. \LKey{5} & Subsurface Modifier Level 0 .. 5 \\
+    &\LKeyCtrl +\LKeyShift +\LKey{Y} & Enable/Disable Subsurface Modifier \\
+    & & (Shows error dialogue if no modifier) \\
 [1em]
 \multirow{2}{*}{Editing (Mesh)}
     &\LKey{T} & Select Vertices \\
@@ -67,6 +71,8 @@
     &\LKey{P} & Detach polygons as new mesh \\
     &\LKey{K} & Add Edge Tool (Knife) \\
     &\LKey{O} & Proportional Editing \\
+    &\LKey{Y} & Detach in same object \\
+    &\LKey{P} & Detach as new object \\
 [1em]
 \multirow{2}{*}{Selection (Mesh)}
     &\LKeyShift +\LKeyAlt +\LMouseL & Select Shortest Path \\
